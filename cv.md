@@ -37,7 +37,9 @@ ___
 
 
 ## Code example:  
-some little part of my site:  
+my first site, after [result_curses](https://nadtochaev-aleksandr.github.io/result_curses/?) only HTML and CSS
+my telegram bot: @Nadtochaev_scillbox_bot  
+some little part of my django site:  
   
 file models.py:
     class Nine_page(models.Model): #Объекты
