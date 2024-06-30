@@ -19,8 +19,11 @@ ___
 
 ## About me:
 I am a civil engineer. I graduated from Belarusian state university of transport in 2014. Since then until today my work has been related to construction. I worked in diferent part of constraction - on construction site, engiineer in constractor's service, customer service engineer. I like this job but it is dificult and not well paid job. I had reached a limit beyond which is very difficult to develop. I decided to try something else.   
+
 It sphere always interested me. I think it is very dynamic, varyated and well paid sphere. I know a lot of people in IT sphere who are constantly developing and have not reached the limit of development.   
+
 I studied Python. Made my first website. But i anderstud that python is doen't enough because you should make not only working but also beautiful websites. Now I am studing HTML, CSS and Java-Script.  
+
 I love to study and open something new. But the main goal - I want to expand my range of opportunities and influence. I would like to be able to choose work from different fields and conditions.   
 
 ___  
@@ -37,12 +40,14 @@ ___
 
 
 ## Code example:  
-my first site, after [result_curses](https://nadtochaev-aleksandr.github.io/result_curses/?) only HTML and CSS
-my telegram bot: @Nadtochaev_scillbox_bot  
-some little part of my django site:  
+my first site, after [result_curses](https://nadtochaev-aleksandr.github.io/result_curses/?) only HTML and CSS \
+
+my telegram bot: @Nadtochaev_scillbox_bot  \
+
+some little part of my django site:  \
   
 file models.py:
-    class Nine_page(models.Model): #Объекты
+    class Nine_page(models.Model):
         p9_title=models.CharField(max_length=250)
 
             def __str__(self): # метод, который вместо id будет отображать поле p9_title, как более понятную и приёмлемую информацию
