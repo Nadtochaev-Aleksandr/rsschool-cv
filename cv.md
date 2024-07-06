@@ -2,7 +2,8 @@
 
 # Nadtochaev Aleksandr CV
 ___
-civil engineer
+civil engineer  
+
 ___
 
 ## Contact information:
@@ -18,13 +19,13 @@ ___
 ___
 
 ## About me:
-I am a civil engineer. I graduated from Belarusian state university of transport in 2014. Since then until today my work has been related to construction. I worked in diferent part of constraction - on construction site, engiineer in constractor's service, customer service engineer. I like this job but it is dificult and not well paid job. I had reached a limit beyond which is very difficult to develop. I decided to try something else.   
+I am a civil engineer. I graduated from Belarusian state university of transport in 2014. Since then until today my work has been related to construction. I worked in different part of constraction - on construction site, engineer in constractor's service, customer service engineer. I like this job but it is dificult and not well paid job. I had reached a limit beyond which is very difficult to develop. I decided to try something else.   
 
-It sphere always interested me. I think it is very dynamic, varyated and well paid sphere. I know a lot of people in IT sphere who are constantly developing and have not reached the limit of development.   
+IT sphere is always interested me. I think it is very dynamic, varied and well paid sphere. I know a lot of people in IT sphere who are constantly developing and have not reached the limit of development.   
 
-I studied Python. Made my first website. But i anderstud that python is doen't enough because you should make not only working but also beautiful websites. Now I am studing HTML, CSS and Java-Script.  
+I studied Python. Made my first website. But I understud that python is not enough because I want to make not only working but also beautiful websites. Now I am studing HTML, CSS and Java-Script.  
 
-I love to study and open something new. But the main goal - I want to expand my range of opportunities and influence. I would like to be able to choose work from different fields and conditions.   
+I love to study and open something new. But my main goal - is to expand my range of opportunities and influence. I would like to be able to choose work from different fields and conditions.   
 
 ___  
 
@@ -46,7 +47,7 @@ my telegram bot: @Nadtochaev_scillbox_bot  \
 
 some little part of my django site:  \
 
-'''  
+```  
 file models.py:
     class Nine_page(models.Model):
         p9_title=models.CharField(max_length=250)
@@ -60,11 +61,11 @@ file models.py:
 
         def __str__(self): # метод, который вместо id будет отображать поле obect, как более понятную и приёмлемую информацию
             return str(self.obect)+' '+str(self.pk) # тут в return и указывается какое поле необходимо возвращать вместо id
-'''
+```
 
 ___
 file views.py:  
-'''
+```
     def photo(request, object, pk): 
         photos=Photo.objects.filter(obect__p9_title=object, pk=pk) 
         portfolio = Nine_page.objects.get(p9_title=object) 
@@ -81,11 +82,11 @@ file views.py:
                 'first_photo':first_photo_obect, 'last_photo':last_photo_obect
                 }
         return render(request, 'catalog/photo.html', context)
-'''
+```
 ___
 file urls.py:  
 
-'''
+```
     from django.urls import path
     from .views import *
 
@@ -105,12 +106,12 @@ file urls.py:
         path('11th/', eleventh_page),
         path('form/', form),
     ]
-'''
+```
 
 ## Experience:  
 * construction master JSC "Gomelpromstroy" branch office "SU-61" - 08.2014-02.2016;
-* инженер ПТО JSC "Gomelpromstroy" branch office "SU-61" - 03.2016-12.2016;
-* Начальник службы ПТО JSC "Gomelpromstroy" branch office "SU-61" - 01.2017-04.2017;
+* production and technical department engineer JSC "Gomelpromstroy" branch office "SU-61" - 03.2016-12.2016;
+* Head of production and technical department JSC "Gomelpromstroy" branch office "SU-61" - 01.2017-04.2017;
 * Engineer of customer service JSC "Gazprom transgaz Belarus" - 05.2017 - now;
 
 ## Education:  
