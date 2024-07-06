@@ -45,7 +45,8 @@ my first site, after [result_curses](https://nadtochaev-aleksandr.github.io/resu
 my telegram bot: @Nadtochaev_scillbox_bot  \
 
 some little part of my django site:  \
-  
+
+'''  
 file models.py:
     class Nine_page(models.Model):
         p9_title=models.CharField(max_length=250)
@@ -59,9 +60,11 @@ file models.py:
 
         def __str__(self): # метод, который вместо id будет отображать поле obect, как более понятную и приёмлемую информацию
             return str(self.obect)+' '+str(self.pk) # тут в return и указывается какое поле необходимо возвращать вместо id
+'''
+
 ___
 file views.py:  
-
+'''
     def photo(request, object, pk): 
         photos=Photo.objects.filter(obect__p9_title=object, pk=pk) 
         portfolio = Nine_page.objects.get(p9_title=object) 
@@ -78,9 +81,10 @@ file views.py:
                 'first_photo':first_photo_obect, 'last_photo':last_photo_obect
                 }
         return render(request, 'catalog/photo.html', context)
+'''
 ___
 template's file photo.html:
-
+'''
     {% extends "html/base.html" %}
     {% load static %}
     {% block content %}
@@ -110,12 +114,13 @@ template's file photo.html:
     </body>
     </html>
     {% endblock content %}
+'''
 ___
 file urls.py:  
 
+'''
     from django.urls import path
     from .views import *
-
 
     urlpatterns = [
         path('', main_page),
@@ -133,6 +138,7 @@ file urls.py:
         path('11th/', eleventh_page),
         path('form/', form),
     ]
+'''
 
 ## Experience:  
 * construction master JSC "Gomelpromstroy" branch office "SU-61" - 08.2014-02.2016;
