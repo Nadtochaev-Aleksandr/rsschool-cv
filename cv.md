@@ -83,39 +83,6 @@ file views.py:
         return render(request, 'catalog/photo.html', context)
 '''
 ___
-template's file photo.html:
-'''
-    {% extends "html/base.html" %}
-    {% load static %}
-    {% block content %}
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}{{img}}{% endblock title %}</title>
-        <link href="{% static 'catalog/css/photo_page_style.css' %}" rel="stylesheet">
-    </head>
-    <body>
-    <div class="photo_page">
-        {% for i in photos %} 
-            {% if i.pk > first_photo.pk %} 
-                <a class="photo_page_a_left" href="{%url 'photos' i.obect l %}"> ← </a> 
-            {% else %}
-                
-            {% endif %}
-            <a href="{% url 'object' i.obect %}"><h3>{{i.obect}}</h3></a> 
-            <img src="{% static i.photo %}"> 
-            {% if i.pk < last_photo.pk %} 
-                <a class="photo_page_a_right" href="{%url 'photos' i.obect r %}"> →  </a>
-            {% else %}
-                
-            {% endif %}
-        {% endfor %}
-    </div>
-    </body>
-    </html>
-    {% endblock content %}
-'''
-___
 file urls.py:  
 
 '''
