@@ -123,6 +123,13 @@ main h2 {
     align-items: center;
 }
 
+.Other {
+    width: 100%;
+    padding: 50px;
+    border-bottom: 3px solid #EEE8AA;
+}
+
+
 .Code_example {
     width: 100%;
     padding: 50px;
