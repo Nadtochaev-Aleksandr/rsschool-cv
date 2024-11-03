@@ -36,15 +36,15 @@
         </section>
         <section class="about-me">
             <h2 id="about-me">About me</h2>
-            <p>I am a civil engineer. I graduated from Belarusian state university of transport in 2014. Since then until today my 
-                work has been related to construction. I worked in different part of constraction - on construction site, engineer in 
-                constractor’s service, customer service engineer. I like this job but it is dificult and not well paid job. I had 
+            <p>I am a civil engineer. I graduated from Belarusian state university of transport in 2014. Since then until today my
+                work has been related to construction. I worked in different part of constraction - on construction site, engineer in
+                constractor’s service, customer service engineer. I like this job but it is dificult and not well paid job. I had
                 reached a limit beyond which is very difficult to develop. I decided to try something else.</p>
-            <p>IT sphere is always interested me. I think it is very dynamic, varied and well paid sphere. I know a lot of people 
+            <p>IT sphere is always interested me. I think it is very dynamic, varied and well paid sphere. I know a lot of people
                 in IT sphere who are constantly developing and have not reached the limit of development.</p>
-            <p>I studied Python. Made my first website. But I understud that python is not enough because I want to make not only 
+            <p>I studied Python. Made my first website. But I understud that python is not enough because I want to make not only
                 working but also beautiful websites. Now I am studing HTML, CSS and Java-Script.</p>
-            <p>I love to study and open something new. But my main goal - is to expand my range of opportunities and influence. 
+            <p>I love to study and open something new. But my main goal - is to expand my range of opportunities and influence.
                 I would like to be able to choose work from different fields and conditions.</p>
         </section>
         <section class="Scills">
@@ -124,7 +124,7 @@
         </section>
         <section class="Code_example">
             <h2 id="Code_example">Code example</h2>
-            <p>my first site on only HTML and CSS, which i made after result_curses: link - <a href="https://nadtochaev-aleksandr.github.io/result_curses/?" 
+            <p>my first site on only HTML and CSS, which i made after result_curses: link - <a href="https://nadtochaev-aleksandr.github.io/result_curses/?"
                 target="_blank">https://nadtochaev-aleksandr.github.io/result_curses/?</a></p>
             <p>my telegram bot: @Nadtochaev_scillbox_bot</p>
             <p>some little part of my django site:</p>
@@ -145,17 +145,17 @@
                 </code>
                 file views.py:
                 <code>
-                    def photo(request, object, pk): 
-                        photos=Photo.objects.filter(obect__p9_title=object, pk=pk) 
-                        portfolio = Nine_page.objects.get(p9_title=object) 
+                    def photo(request, object, pk):
+                        photos=Photo.objects.filter(obect__p9_title=object, pk=pk)
+                        portfolio = Nine_page.objects.get(p9_title=object)
                         img = portfolio.photo_set.get(pk=pk)
-                        i = img.pk 
-                        imgs=portfolio.photo_set.filter(obect__p9_title=object) 
-                        len_obect_photo_list=len(imgs)  
-                        first_photo_obect=imgs[0] 
-                        last_photo_obect=imgs[len_obect_photo_list-1] 
-                        l=i-1 
-                        r=i+1 
+                        i = img.pk
+                        imgs=portfolio.photo_set.filter(obect__p9_title=object)
+                        len_obect_photo_list=len(imgs)
+                        first_photo_obect=imgs[0]
+                        last_photo_obect=imgs[len_obect_photo_list-1]
+                        l=i-1
+                        r=i+1
                         context={'photos':photos, 'img':img, 'portfolio':portfolio, 'l':l, 'r':r,
                                 'imgs':imgs, 'len_obl':len_obect_photo_list,
                                 'first_photo':first_photo_obect, 'last_photo':last_photo_obect
@@ -166,7 +166,6 @@
                 <code>
                     from django.urls import path
                     from .views import *
-                
                     urlpatterns = [
                         path('', main_page),
                         path('second/', second_page),
