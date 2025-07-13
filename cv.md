@@ -124,4 +124,4 @@ file urls.py:
 * English: A2-B1;
 * Italian: B2;
 * Russian: native;
-* Belorussian: native;
+* Belorussian: native.
