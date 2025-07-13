@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color:#EEE8AA;
+    padding: 40px;
+}
+
+header ul {
+    display: flex;
+    justify-content:flex-end;
+    list-style:none;
+}
+
+header a {
+    text-decoration: none;
+    color: #696969;
+    margin: 0px 20px;
+}
+
+main {
+    padding: 50px;
+    background-color: #FFFFE0;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+main h1, h4 {
+    width: 100%;
+    text-align: center;
+    margin:10px 0px;
+}
+main h2 {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.avatar {
+    width: 50%;
+    padding: 50px;
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #EEE8AA;
+}
+
+.contacts {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #EEE8AA;
+}
+
+.contacts li {
+   margin-top: 20px;
+}
+
+.avatar img {
+    width: 300px;
+    height: 300px;
+    border-radius:20px;
+}
+
+.about-me {
+    padding: 50px;
+    border-bottom: 3px solid #EEE8AA;
+}
+
+.about-me p{
+    padding: 10px;
+}
+
+.about-me h2{
+    text-align: center;
+}
+
+.table, .table td {
+    border: 1px solid black;
+}
+
+.Scills {
+    width: 30%;
+    padding: 50px;
+    border-bottom: 3px solid #EEE8AA;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.Experience {
+    width: 70%;
+    padding: 50px;
+    border-bottom: 3px solid #EEE8AA;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.Education {
+    width: 50%;
+    padding: 50px;
+    border-bottom: 3px solid #EEE8AA;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.Languages {
+    width: 50%;
+    padding: 50px;
+    border-bottom: 3px solid #EEE8AA;
+    box-sizing:border-box;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.Other {
+    width: 100%;
+    padding: 50px;
+    border-bottom: 3px solid #EEE8AA;
+}
+
+
+.Code_example {
+    width: 100%;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+
+.Code_example p {
+    margin: 10px 0px;
+}
+
+
+footer {
+    background-color: #EEE8AA;
+    padding: 40px;
+    display: flex;
+    align-items:center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #696969;
+    margin: 0px 20px;
+}
+
+footer img {
+    width: 100px;
+    height: 50px;
+}
+
+.footer_img {
+    display: flex;
+    flex-grow: 1;
+    justify-content:flex-end;
+}
+
