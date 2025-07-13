@@ -1,0 +1,1 @@
+This is CV task of Nadtochaev Aleksandr
